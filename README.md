@@ -5,5 +5,5 @@ This program solves the mazes by using recursion and backtracking. There are 7 m
 
 ## Building
 - Clone/Download the repository
-- To test a particular maze to find its solution, run the file maze_solver.py
-- To test all the files at once, run test.py
+- To test a particular maze to find its solution, run the file *maze_solver.py*
+- To test all the files at once, run *test.py*
