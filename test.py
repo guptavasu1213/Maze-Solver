@@ -4,8 +4,8 @@ from maze_class import *
 #This function tests all the given maze files and shows the solution of it, if possible.
 def test():
     print("--RUNNING THE TEST FUNCTION FOR ALL THE FILES--\n")
-    for file in ["maze510.txt", "maze510cycles.txt", "maze510island.txt", "maze510islandnosoln.txt", 
-                 "maze510nosoln.txt","maze1020.txt", "maze50100.txt"]:
+    for file in ["test_files/maze510.txt", "test_files/maze510cycles.txt", "test_files/maze510island.txt", "test_files/maze510islandnosoln.txt", 
+                 "test_files/maze510nosoln.txt","test_files/maze1020.txt", "test_files/maze50100.txt"]:
         fIn = open(file)
         contents_of_file = fIn.readlines()     
         fIn.close()     #Very Important to close
