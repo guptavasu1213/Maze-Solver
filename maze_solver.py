@@ -9,7 +9,7 @@ def main():
     while True:
         fName = input("Enter the file name: ")
         try:
-            fIn = open(fName)
+            fIn = open("test_files/"+fName)
             break # Breaks out when the program doesn't crash while opening the file
         except: #If the file is not present, the program crashes.
             print("Please enter a valid file name. Try Again\n")
@@ -17,7 +17,7 @@ def main():
     #After opening the file successfully, the contents of the file are supposed to be read.
     contents_of_file = fIn.readlines()     
     fIn.close()     #Very Important to close
-    print("\nMaze requested to solve: ",fName)
+    print("\nMaze requested to solve: ", fName)
     
     maze = Maze(contents_of_file)
     if maze.find_path(*list(maze._startingPoint)) == True:
